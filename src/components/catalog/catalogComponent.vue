@@ -1,11 +1,11 @@
 <template>
   <div class="catalog">
     <div class="container">
-      <div class="row row-cols-3">
+      <div class="row">
         <div
             v-for="el in products"
             :key="el"
-            class="col el"
+            class="el col-xl-3 col-md-6 col-sm-12"
         >
           <catalog-item-component/>
         </div>

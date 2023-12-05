@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-grad15">
     <a class="navbar-brand cont" href="#">
       <div class="logo">
-        <img src="../../assets/logo.png" class="d-inline-block align-top">
+        <img src="../../assets/logo_1.png" class="d-inline-block align-top">
       </div>
       <div class="nav">
         <router-link :to="{name: 'catalog'}">
@@ -42,7 +42,12 @@ nav{
     display: flex;
     justify-content: space-between;
     .nav{
+      color: #fff;
       gap: 20px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }

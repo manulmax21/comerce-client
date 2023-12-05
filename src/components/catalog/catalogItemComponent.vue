@@ -6,8 +6,8 @@
     <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <my-button>Добавть в корзину</my-button>
+    <div class="brak fs-4">
+      <i class="fi fi-rr-shopping-cart"></i>
     </div>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 .card{
   padding: 5px;
   .card__img{
@@ -30,6 +31,16 @@ export default {
     overflow: hidden;
     max-width: 120px;
     height: auto;
+  }
+  .brak{
+    margin: 0 10px;
+  }
+  .fi-rr-shopping-cart{
+    color: #F64C72;
+    cursor: pointer;
+  }
+  .fi-rr-shopping-cart:hover{
+    color: var(--color1);
   }
 }
 </style>
