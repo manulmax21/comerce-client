@@ -1,12 +1,14 @@
 <template>
-  <div class="card" style="width: 18rem;">
+  <div class="card p-2" style="width: 18rem;">
     <div class="card__img">
-      <img src="../../assets/img/1.jpg" class="card-img-top" alt="...">
+      <img src="../../assets/img/p1.jpg" class="card-img-top" alt="...">
     </div>
     <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-name">Пончик розовый</p>
+      <p class="card-subtitle">Пончики</p>
     </div>
     <div class="brak fs-4">
+      <span class="price">1200 P</span>
       <i class="fi fi-rr-shopping-cart"></i>
     </div>
   </div>
@@ -33,7 +35,25 @@ export default {
     height: auto;
   }
   .brak{
+    display: flex;
+    justify-content: space-between;
     margin: 0 10px;
+    .price{
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .card-name{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: #3e3e3e;
+  }
+  .card-subtitle{
+    font-size: 12px;
+    margin: 5px 0;
+    padding: 0;
+    color: #9f9f9f;
   }
   .fi-rr-shopping-cart{
     color: #F64C72;

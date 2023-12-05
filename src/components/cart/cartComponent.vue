@@ -21,7 +21,17 @@ export default {
   components: {cartItemComponent},
   data(){
     return{
-      carts: [1,2,3,4,5]
+      carts: [
+          {
+            id:'a124',
+            name: 'пончик yellow',
+            category: 'пончики',
+            title: 'излюбленное лакомство, которое можно описать как ' +
+                'жареное в масле кондитерское изделие, обычно круглой формы',
+            price: 1199,
+            quantity: 1
+        }
+      ,2,3,4,5]
     }
   }
 

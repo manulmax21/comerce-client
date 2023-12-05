@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-light bg-grad15">
+  <nav class="navbar navbar-light bg-grad34">
     <a class="navbar-brand cont" href="#">
       <div class="logo">
-        <img src="../../assets/logo_1.png" class="d-inline-block align-top">
+        <img src="../../assets/img/pf1.png" class="d-inline-block align-top">
       </div>
       <div class="nav">
         <router-link :to="{name: 'catalog'}">

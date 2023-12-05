@@ -21,7 +21,15 @@ export default {
   components: {CatalogItemComponent},
   data(){
     return{
-      products: [1,2,3,4,5]
+      products: [
+        {
+          id:'a123',
+          name: 'пончик pink',
+          category: 'пончики',
+          title: 'излюбленное лакомство, которое можно описать как ' +
+              'жареное в масле кондитерское изделие, обычно круглой формы',
+          price: 1200,
+        },2,3,4,5]
     }
   },
 }
