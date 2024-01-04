@@ -1,7 +1,9 @@
 <template>
   <div class="card p-2" style="width: 18rem;">
     <div class="card__img">
-      <img src="../../assets/img/p1.jpg" class="card-img-top" alt="...">
+      <img
+          :src="require(`../../assets/img/p1.jpg`)"
+           alt="...">
     </div>
     <div class="card-body">
       <p class="card-name">Пончик розовый</p>

@@ -1,16 +1,11 @@
 <template>
-  <headerComponent/>
-<!--  <nav>-->
-<!--    <router-link to="/">Home</router-link> |-->
-<!--    <router-link to="/about">About</router-link>-->
-<!--  </nav>-->
-  <router-view/>
+  <main-component/>
 </template>
 <script>
-import headerComponent from "@/components/header/headerComponent";
+import mainComponent from "@/components/mainComponent";
 export default {
   components:{
-    headerComponent
+    mainComponent
   }
 }
 </script>

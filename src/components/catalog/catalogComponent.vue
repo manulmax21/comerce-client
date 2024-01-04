@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div
-            v-for="el in products"
+            v-for="el in filterProducts"
             :key="el"
             class="el col-xl-3 col-md-6 col-sm-12"
         >
@@ -16,6 +16,8 @@
 
 <script>
 import CatalogItemComponent from "@/components/catalog/catalogItemComponent";
+import {mapActions, mapGetters} from 'vuex'
+
 export default {
   name: "catalogComponent",
   components: {CatalogItemComponent},
@@ -32,6 +34,27 @@ export default {
         },2,3,4,5]
     }
   },
+  methods:{
+    ...mapActions([
+        'GET_PRODUCT_FROM_API'
+        ])
+  },
+  computed: {
+    ...mapGetters([
+        'PRODUCTS'
+    ]),
+    filterProducts(){
+      return this.PRODUCTS
+    }
+  },
+  mounted() {
+    this.GET_PRODUCT_FROM_API()
+      .then(res => {
+        if (res.data){
+          console.log(res.data)
+        }
+      })
+  }
 }
 </script>
 

@@ -1,11 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import catalogView from "@/views/CatalogView";
+
 import cartView from "@/views/CartView";
 import settingsView from "@/views/SettingsView";
+import homeView from "@/views/HomeView";
+import catalogView from "@/views/CatalogView";
 
 const routes = [
   {
     path: '/',
+    name: 'home',
+    component: homeView
+  },
+  {
+    path: '/catalog',
     name: 'catalog',
     component: catalogView
   },
