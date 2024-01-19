@@ -12,7 +12,6 @@ export default {
     headerComponent
   }
 }
-fetch('http://localhost:3000/products').then(e => console.log(e))
 </script>
 
 <style scoped>

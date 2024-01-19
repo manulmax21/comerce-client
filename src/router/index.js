@@ -14,7 +14,11 @@ const routes = [
   {
     path: '/catalog',
     name: 'catalog',
-    component: catalogView
+    component: catalogView,
+    meta: {
+      title: "Kofi: Tic Tac Toe",
+      forVisitors: true
+    }
   },
   {
     path: '/cart',

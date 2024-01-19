@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div
-            v-for="el in filterProducts"
+            v-for="el in PRODUCTS"
             :key="el"
             class="el col-xl-3 col-md-6 col-sm-12"
         >
